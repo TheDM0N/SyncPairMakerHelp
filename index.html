@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Georama:wght@400;700&display=swap" rel="stylesheet">
+<html>
+<style>
+
+html{
+font-family: 'Georama', sans-serif;
+background-image:url('repeat.png');
+}
+
+.fx{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+.container{
+background: rgba(255, 255, 255, .75);
+border: 2px solid black;
+width:auto;
+max-width:50ch;
+height:auto;
+text-align:center;
+padding:1rem;
+}
+
+.title{
+display:flex;
+flex-direction: row;
+align-items:center;
+justify-content: center;
+gap:1rem;
+}
+
+#box1{
+display:none;
+}
+#box2{
+display:none;
+}
+
+#box3{
+Outline:1px solid black;
+
+}
+
+.link{
+ text-decoration: none;
+ }
+
+
+
+
+</style>
+<title>Sync Pair Maker Help</title>
+<body>
+<div class="fx">
+<h1>How To Use the Custom Sync Pair Maker</h1>
+<div class="container">
+	<div class="title one">
+		<h1>How To Use Search Bar</h1>
+		<a href="#" class="btn2" id="arrow"onclick="closeDiv()">▼</a>
+	</div>
+	<div id="box1">
+		<p>Search using the pokemons ID number, this is the national dex number that shows up on 
+		<a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number" 
+		target="_blank"> bulbapedia </a> or <a href="https://www.serebii.net/pokemon/nationalpokedex.shtml"
+		target="_blank">serebbi</a></p>
+		<p>All ID numbers must be 3 digits long ie. Bulbasaur=001 , Pikachu=025</p>
+		<p>For an Aloan version enter the ID number hyphen a ie. 027-a will give you Aloan Sandshrew</p>
+		<p>For a Galar version enter the ID number hyphen g ie. 052-g will give you Galarian Meowth</p>
+		<p>For Gender forms use ID number hyphen f for the female version, the male version should be the base version</p>
+		<p>For a Mega Evolution use the ID number hyphen m ie. 003-m will give you Mega Venasuar</p>
+		<p>For Charizard use 006-mx and 006-my for the 2 different megas</p>
+		<p>For a Gigantamax use ID number hyphen gi ie. 025-gi will give you Gigantamax Pikachu</p>
+		<p>For some bonus pictures pikachu has -o -h -s -u -k -a -p -w check them out</p>
+		<p>Urfishu rapid strike is -r and his gigantamax is -rgi</p>
+		<p>Calyrex is -i -s</p>
+		<p>Darmanitan zen is -z and galar zen is -gz</p>
+		<p>Entering 000 will make a blank area that you can photoshop your own images</p>
+		<p>Click the link below if any other questions or suggestions are needed</p>
+	</div>
+	<div class="title two">
+		<h1>About the New Website</h1>
+		<a href="#" class="btn2" id="arrow2"onclick="closeDiv2()">▼</a>
+	</div>
+	<div id="box2">
+		<p>Almost all boxes will auto resize if you type alot</p>
+		<p>Avoid typing too much as it can mess up gradients and screenshots, general advice is use abreviations such as spd. sp.atk sp.def. ect.</p>
+		<p>My theory is max moves will act like they do in the game so they will correspond with the attack moves you create, ect water will be a water max move and a trainer move will get rid of one of the boxes</p>
+		<p>If this theory is wrong I will update the website to how it actually works<p>
+		<p>Adding stats is now supported<p>
+		<p>Adding Stats and Max Moves will make taking a screenshot difficult, I recomend taking seperate screenshots to make everything look neat for now while I work on fixes<p>
+		<p>If using on desktop going full screen and zooming out can help taking a clean screenshot, avoid zooming out too far as it messes up the images, fixes coming soon</p>
+		<p>For best results upload a trainer png and try to not have any blank extra space</p>
+	</div>
+	<div id="box3">
+		<a href="https://surveyheart.com/form/6121dc761fbcd1418f427fb0"
+		target="_blank" class="link">For Questions and Suggestions follow click here</a>
+	</div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+<script>
+function closeDiv() {
+  var x = document.getElementById("box1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   var y = document.getElementById("arrow");
+   if (y.innerHTML === "▼"){
+   y.innerHTML = "▲";
+   } else {
+   y.innerHTML="▼";
+}
+}
+
+function closeDiv2() {
+  var x = document.getElementById("box2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   var y = document.getElementById("arrow2");
+   if (y.innerHTML === "▼"){
+   y.innerHTML = "▲";
+   } else {
+   y.innerHTML="▼";
+}
+}
+
+
+
+</script>
