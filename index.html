@@ -47,6 +47,10 @@ display:none;
 Outline:1px solid black;
 
 }
+	
+	#box4{
+display:none;
+}
 
 .link{
  text-decoration: none;
@@ -106,6 +110,17 @@ Outline:1px solid black;
 		<p>If using on desktop going full screen and zooming out can help taking a clean screenshot, avoid zooming out too far as it messes up the images, fixes coming soon</p>
 		<p>For best results upload a trainer png and try to not have any blank extra space</p>
 	</div>
+	<div class="title three">
+		<h1>How to Download Image</h1>
+		<a href="#" class="btn3" id="arrow3"onclick="closeDiv3()">▼</a>
+	</div>
+	<div id="box4">
+		<p>To Save your image the easy way just take a screenshot of your image</p>
+		<p>The New Download button will create a preview of your image and you can right click save that way or hold save if on mobile</p>
+		<p>IMPORTANT! Image Download Only Works with Searchbar 3s images, serebbi has a block on there images</p>
+		<p>If you try downloading using the other 2 searchbars images the preview will have your pokemon be blank</p>
+		<p>The Download button is supposed to automatically download image but due to security purposes the browser will probably block it so right click downloading is required</p>
+	</div>
 	<div id="box3">
 		<a href="https://surveyheart.com/form/6121dc761fbcd1418f427fb0"
 		target="_blank" class="link">For Questions and Suggestions click here</a>
@@ -139,6 +154,21 @@ function closeDiv2() {
     x.style.display = "block";
   }
    var y = document.getElementById("arrow2");
+   if (y.innerHTML === "▼"){
+   y.innerHTML = "▲";
+   } else {
+   y.innerHTML="▼";
+}
+}
+	
+	function closeDiv3() {
+  var x = document.getElementById("box4");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   var y = document.getElementById("arrow3");
    if (y.innerHTML === "▼"){
    y.innerHTML = "▲";
    } else {
